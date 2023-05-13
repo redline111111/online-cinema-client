@@ -3,14 +3,16 @@ import { FC } from 'react'
 
 import Menu from './Menu'
 import { menus } from './menu.data'
-import GenreMenu from './genres/GenreMenu'
 
+const DynamicGenreMenu: any= dynamic(() => import('./genres/GenreMenu'), {
+	ssr: false,
+})
 
 const MenuContainer: FC = () => {
 	return (
 		<div>
 			<Menu menu={menus[0]} />
-			<GenreMenu/>
+			<DynamicGenreMenu />
 			<Menu menu={{ title: 'General', items: [] }} />
 		</div>
 	)

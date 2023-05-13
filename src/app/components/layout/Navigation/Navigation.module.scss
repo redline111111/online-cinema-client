@@ -1,3 +1,13 @@
 .navigation {
 	@apply py-layout;
 }
+.navigation::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.navigation {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+

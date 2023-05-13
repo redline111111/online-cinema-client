@@ -1,4 +1,4 @@
-import SkeletonLoader from '../../../../ui/skeleton-loader/SkeletonLoader'
+import SkeletonLoader from '@/ui/skeleton-loader/SkeletonLoader'
 
 import Menu from '../Menu'
 

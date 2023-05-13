@@ -2,11 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
+import { IWidgetMovie } from '../../MoviesContainer/movie.types'
 
 import styles from './SearchList.module.scss'
-import { IMovie } from '../../../../../shared/types/movie.types'
 
-const SearchList: FC<{ movies: IMovie[] }> = ({ movies }) => {
+const SearchList: FC<{ movies: IWidgetMovie[] }> = ({ movies }) => {
 	return (
 		<div className={styles.list}>
 			{movies.length ? (

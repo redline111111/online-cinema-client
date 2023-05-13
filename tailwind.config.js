@@ -5,8 +5,7 @@ const primary = '#E30B13'
 
 module.exports = {
 	content: [
-		'./pages/**/*.{js,ts,jsx,tsx}',
-		'./app/components/**/*.{js,ts,jsx,tsx}',
+		"./src/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
 		colors: {
@@ -77,6 +76,8 @@ module.exports = {
 		},
 	},
 	plugins: [
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/aspect-ratio'),
 		plugin(({ addComponents, theme, addUtilities }) => {
 			addComponents({
 				'.btn-primary': {

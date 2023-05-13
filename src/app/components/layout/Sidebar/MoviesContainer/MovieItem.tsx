@@ -2,11 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
-import { MaterialIcon } from '../../../../components/ui/icons/MaterialIcon'
+import { MaterialIcon } from '@/components/ui/icons/MaterialIcon'
 
-import { getGenresListEach } from '../../../../utils/movie/getGenresList'
+import { getGenresListEach } from '@/utils/movie/getGenresList'
 
-import { getGenreUrl, getMovieUrl } from '../../../../configs/url.config'
+import { getGenreUrl, getMovieUrl } from '@/configs/url.config'
 
 import styles from './MovieList.module.scss'
 import { IWidgetMovie } from './movie.types'

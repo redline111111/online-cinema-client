@@ -3,9 +3,9 @@ import { FC } from 'react'
 
 import styles from './Menu.module.scss'
 import MenuItem from './MenuItem'
-import { IMenu } from './menu.interface'
+import { IMenu } from './menu.types'
 
-const DynamicAuthItems = dynamic(() => import('./auth/AuthItems'), {
+const DynamicAuthItems:any = dynamic(() => import('./auth/AuthItems'), {
 	ssr: false,
 })
 
